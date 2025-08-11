@@ -1,0 +1,25 @@
+name: gosec-scan
+kind: workflow
+apiVersion: automation.cloudbees.io/v1alpha1
+
+on:
+  push:
+    branches: 
+      - 'main'
+  workflow_dispatch:
+  schedule:
+    - cron: 30 3 * * 1-5
+permissions:
+  scm-token-own: read
+  scm-token-org: read
+  id-token: write
+
+jobs:
+ gosec-scan:
+   steps:        
+      - name: checkout Source Code
+        uses: cloudbees-io/checkout@v1
+
+      - name: Scan with Gosec
+        uses: cloudbees-io/gosec-plugin@v2
+        
