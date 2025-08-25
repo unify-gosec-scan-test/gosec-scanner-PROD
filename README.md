@@ -1,7 +1,7 @@
 # vuln-go-api
 
 A deliberately insecure Golang REST API with common API security flaws. Use for educational/testing purposes only.
-
+ 
 ## Key Vulnerabilities
 
 - 🔓 Hardcoded JWT Secret
