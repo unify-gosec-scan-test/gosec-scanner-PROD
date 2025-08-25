@@ -1,4 +1,4 @@
-name: gosec-scan
+name: gosec-plugin-scan
 kind: workflow
 apiVersion: automation.cloudbees.io/v1alpha1
 
