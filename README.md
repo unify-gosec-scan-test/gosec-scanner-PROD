@@ -9,7 +9,7 @@ A deliberately insecure Golang REST API with common API security flaws. Use for 
 - 📂 Directory traversal: `/files/../../etc/passwd`
 - 🚫 No input validation or rate limiting
 - 🌍 CORS misconfiguration (`*`)
-- ⚠️ Verbose logging of secrets
+- ⚠️ Verbose logging of secrets 
 
 ## ⚠️ WARNING
 
